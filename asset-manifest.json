@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Quick_sell/static/css/main.0b134a2e.css",
+    "main.js": "/Quick_sell/static/js/main.0196919a.js",
+    "static/media/profile7.png": "/Quick_sell/static/media/profile7.1b8968fecb5bdacbd5a5.png",
+    "static/media/profile6.png": "/Quick_sell/static/media/profile6.2c9bfe8f8f2f64cd0cb4.png",
+    "static/media/profile.png": "/Quick_sell/static/media/profile.ce2f6cdef5fccb13e8bc.png",
+    "static/media/profile1.png": "/Quick_sell/static/media/profile1.4bb0a760cc1f4069ae09.png",
+    "index.html": "/Quick_sell/index.html",
+    "main.0b134a2e.css.map": "/Quick_sell/static/css/main.0b134a2e.css.map",
+    "main.0196919a.js.map": "/Quick_sell/static/js/main.0196919a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b134a2e.css",
+    "static/js/main.0196919a.js"
+  ]
+}
