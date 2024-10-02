@@ -1,0 +1,112 @@
+.Dashboard-Container {
+  height: calc(100% - 60px);
+  padding: 25px;
+  gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  box-sizing: border-box; /* Ensure padding and borders don't affect width */
+}
+
+.column {
+  flex: 1;
+  min-width: 280px; /* Prevent columns from shrinking too much */
+  max-width: calc(20% - 20px);
+  margin: 10px;
+  border-radius: 8px;
+  box-sizing: border-box; /* Prevent margin and padding from affecting the width */
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+i {
+  font-size: 22px;
+  word-wrap: break-word;
+}
+
+.text {
+  padding: 0px 12px;
+  font-weight: 600;
+  color: black;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+span {
+  color: #8a8585;
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .column {
+    max-width: calc(33.33% - 20px); /* Adjust to 3 columns */
+    min-width: 250px; /* Ensure columns don't shrink too much */
+  }
+}
+
+@media (max-width: 992px) {
+  .column {
+    max-width: calc(50% - 20px); /* 2 columns layout */
+    min-width: 220px;
+  }
+
+  .Header {
+    flex-direction: column;
+    align-items: flex-start; /* Align header items to the start */
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    max-width: calc(50% - 20px); /* 2 columns but reduced width */
+    min-width: 220px;
+  }
+
+  .Header {
+    flex-direction: column;
+    align-items: flex-start; /* Align header items to the start */
+    margin-bottom: 15px;
+  }
+
+  .icon-text .text, .icon-text span {
+    font-size: 14px; /* Reduce font size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    max-width: 100%; /* Single column layout */
+    min-width: 100%;
+  }
+
+  .Dashboard-Container {
+    padding: 10px; /* Reduce padding for small screens */
+  }
+
+  .Header {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start on small screens */
+  }
+
+  .icon-text .text, .icon-text span {
+    font-size: 14px;
+  }
+
+  .icon-text i {
+    font-size: 20px;
+  }
+}
